@@ -118,19 +118,6 @@ aside {
         line-height: 2.0;
         text-align: left;
         overflow-y: scroll;
-
-        &:before {
-          content: '';
-          width: 96px;
-          height: 36px;
-          background-image: url("../../theme/images/tmp/speech-bubble_tail.png");
-          display: block;
-          position: absolute;
-          top: 50px;
-          left: 0;
-          //@include oneline-sprite-box($icons, speech-bubble_tail);
-         // @include pseudo-block($top: 50px, $left: -96px);
-        }
     }
   }
 }
@@ -674,13 +661,23 @@ aside {
   }
 }
 
-
-.hidden-scroll {
+.speech-bubble_tail {
   display: inline-block;
-  width: 715px;
-  overflow: hidden;
-  margin-left: 115px;
+  position: relative;
+
+  &:before {
+    @include oneline-sprite-box($icons, speech-bubble_tail);
+    @include pseudo-block($top: 140px, $left: 19px);
+  }
+  .hidden-scroll {
+    display: inline-block;
+    width: 715px;
+    overflow: hidden;
+    margin-left: 115px;
+    position: relative;
+  }
 }
+
 
 @keyframes redBoxWidth {
   0% {
