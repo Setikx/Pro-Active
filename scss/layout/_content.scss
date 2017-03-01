@@ -70,7 +70,7 @@ aside {
 
 .slide-1 {
   background-image: url("../../theme/images/bg/slide-1.jpg");
-  background-size: cover;
+  @include background-size (cover);
 
     .content {
 
@@ -137,7 +137,7 @@ aside {
 
 .slide-2, .slide-3 {
   background-image: url("../../theme/images/bg/slide-1.jpg");
-  background-size: cover;
+  @include background-size(cover);
 
   .content {
     color: red;
