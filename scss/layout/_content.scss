@@ -64,7 +64,7 @@ aside {
 }
 
 #mask {
-  box-shadow:0 0 0 50vw rgba(0, 0, 0, 0.70) inset;
+  @include box-shadow(0 0 0 50vw rgba(0, 0, 0, 0.70) inset);
 }
 
 
@@ -81,7 +81,7 @@ aside {
         vertical-align: top;
 
         .director {
-          border-radius: 50%;
+          @include border-radius(50%);
           overflow: hidden;
           height: 135px;
         }
@@ -111,7 +111,7 @@ aside {
         position: relative;
         border-bottom-right-radius: 35px;
         border-top-left-radius: 35px;
-        opacity: .9;
+        @include opacity (.9);
         padding: 0 40px 30px 30px;
         color: white;
         font-size: 18px;
@@ -224,7 +224,7 @@ aside {
 
 
         img {
-          transform: scale(.9);
+          @include transform(scale(.9));
         }
       }
 
@@ -245,7 +245,7 @@ aside {
     .content {
       .essence {
         img {
-          transform: scale(.54);
+          @include transform(scale(.54));
           position: absolute;
           top: -35%;
         }
@@ -302,7 +302,7 @@ aside {
     .content {
       .essence {
         .item_4 {
-          transform: scale(.9);
+          @include transform (scale(.9));
         }
       }
     }
@@ -376,7 +376,7 @@ aside {
 
         img {
           margin-top: 20px;
-          transform:scale(.9);
+          @include transform(scale(.9));
         }
       }
     }
@@ -395,7 +395,7 @@ aside {
   font-size: 18px;
   text-align: left;
   background-color: red;
-  opacity: .8;
+  @include opacity (.8);
   padding: 15px 60px 45px 30px;
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -453,7 +453,7 @@ aside {
           }
 
         img {
-          transform: scale(.8);
+          @include transform(scale(.8));
           position: absolute;
           top: -106px;
           left: 5%;
@@ -485,7 +485,7 @@ aside {
         }
 
         img {
-          transform: scale(.5);
+          @include transform (scale(.5));
           position: absolute;
           top: 0;
         }
@@ -519,7 +519,7 @@ aside {
         }
 
         img {
-          transform: scale(.5);
+          @include transform (scale(.5));
           position: absolute;
           top: 0;
         }
@@ -534,7 +534,7 @@ aside {
       .essence {
 
         img {
-          transform: scale(.5);
+          @include transform (scale(.5));
           position: absolute;
           top: -44%;
         }
@@ -565,7 +565,7 @@ aside {
       .essence {
 
         img {
-          transform: scale(0.6);
+          @include transform (scale(0.6));
           position: absolute;
           top: -27%;
         }
@@ -579,7 +579,7 @@ aside {
     .content {
       .essence {
         img {
-          transform: scale(0.56);
+          @include transform (scale(0.56));
           position: absolute;
           top: -33%;
         }
@@ -593,7 +593,7 @@ aside {
     .content {
       .essence {
         img {
-          transform: scale(0.5);
+          @include transform (scale(0.5));
           position: absolute;
           top: -42%;
         }
@@ -666,7 +666,7 @@ aside {
     .content {
       .essence {
         img {
-          transform: scale(0.15);
+          @include transform (scale(0.15));
           top: -266%;
         }
       }
@@ -684,14 +684,14 @@ aside {
 
 @keyframes redBoxWidth {
   0% {
-    opacity: 0;
+    @include opacity (0);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
     height: 0;
   }
 
   20% {
-    opacity: .9;
+    @include opacity (.9);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
     height: 150px;
@@ -699,7 +699,7 @@ aside {
   }
 
   60% {
-    opacity: .9;
+    @include opacity(.9);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
     height: 150px;
@@ -707,7 +707,7 @@ aside {
   }
 
   90% {
-    opacity: .9;
+    @include opacity(.9);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
     height: 200px;
@@ -730,11 +730,11 @@ aside {
 
 @keyframes textOpacity {
   0% {
-    opacity: 0;
+    @include opacity (0);
   }
 
   100% {
-    opacity: 1;
+    @include opacity (1);
   }
 }
 
