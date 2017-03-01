@@ -1,0 +1,390 @@
+
+
+aside {
+  width: 96px;
+  height: 100vh;
+  position: fixed;
+  background-color: red;
+  z-index: 10;
+}
+
+
+.wrapper {
+  min-width: 940px;
+  height: 100vh;
+  margin-left: 96px;
+  color: #000000;
+  font-size: 16px;
+  font-family: 'MuseoSansCyrl-300';
+  position: relative;
+  overflow: hidden;
+}
+
+.flexslider {
+  border: none;
+}
+
+.slide {
+  height: 100vh;
+
+  .inner {
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    padding-bottom: 100px;
+
+    > span {
+      display: inline-block;
+      color: red;
+      font-size: 32px;
+      margin: 50px 16px 0 0;
+      font-family: 'FedraSansPro-Normal';
+
+      strong {
+        color: red;
+      }
+    }
+    h1 {
+      width: 550px;
+      margin: 20px auto 0 auto;
+      font-family: "MuseoSansCyrl-700";
+      font-size: 72px;
+      line-height: 115%;
+      color: white;
+    }
+    > p {
+      margin: 4px auto 0 auto;
+      width: 700px;
+      font-size: 23px;
+      line-height: 150%;
+      color: white;
+    }
+  }
+}
+
+#mask {
+  box-shadow:0 0 0 50vw rgba(0, 0, 0, 0.70) inset;
+}
+
+
+.slide-1 {
+  background-image: url("../../theme/images/bg/slide-1.jpg");
+  background-size: cover;
+
+    .content {
+
+      figure {
+        display: inline-block;
+        width: 135px;
+        margin-top: 54px;
+        vertical-align: top;
+
+        .director {
+          border-radius: 50%;
+          overflow: hidden;
+          height: 135px;
+        }
+
+        figcaption {
+          color: white;
+          margin-top: 28px;
+          padding-left: 35px;
+          line-height: 1.32;
+          text-align: left;
+
+          strong {
+            color: white;
+          }
+        }
+
+        img {
+          @include transform(rotate(12deg));
+        }
+      }
+      .speech-bubble {
+        display: inline-block;
+        width: 732px;
+        height: 600px;
+        background-color: red;
+        margin-top: 52px;
+        position: relative;
+        border-bottom-right-radius: 35px;
+        border-top-left-radius: 35px;
+        opacity: .9;
+        padding: 0 40px 30px 30px;
+        color: white;
+        font-size: 18px;
+        line-height: 2.0;
+        text-align: left;
+        overflow-y: scroll;
+
+        :before {
+          @include oneline-sprite-box($icons, speech-bubble_tail);
+          @include pseudo-block($top: 50px, $left: -96px);
+        }
+    }
+  }
+}
+
+.slide-2, .slide-3 {
+  background-image: url("../../theme/images/bg/slide-1.jpg");
+  background-size: cover;
+
+  .content {
+    color: red;
+    font-size: 23px;
+
+      .item-1 {
+        margin: 43px 0 0 0;
+        font-family: "MuseoSansCyrl-500";
+      }
+      .item-2 {
+
+        font-size: 600px;
+        margin: 20px 0 0 0;
+        line-height: 0.7;
+      }
+
+  }
+}
+
+.slide-3 {
+  .item-3 {
+    margin: 0;
+    font-size: 180px;
+    line-height: 0.8
+  }
+}
+
+
+
+
+
+
+
+.slide-4, .slide-5, .slide-6, .slide-7, .slide-8, .slide-9 {
+  position: relative;
+
+  .inner {
+    height: 100vh;
+    padding: 0;
+
+    h1 {
+      width: 900px;
+
+      color: red;
+      padding: 0;
+    }
+    > p {
+      color: red;
+    }
+    .content {
+      color: #000000;
+      height: 65vh;
+      position: relative;
+
+      .essence {
+        margin-top: 25px;
+        display: inline-block;
+        width: 100%;
+        height: 350px;
+        position: relative;
+
+
+        img {
+          transform: scale(.9);
+        }
+      }
+
+      .desc {
+        padding: 0 90px;
+        position: absolute;
+        bottom: 5%;
+        font-size: 20px;
+        font-family: "MuseoSansCyrl-500";
+
+      }
+    }
+  }
+}
+
+.slide-6, .slide-7 {
+  .inner {
+    .content {
+      .essence {
+        img {
+          transform: scale(.54);
+          position: absolute;
+          top: -35%;
+        }
+      }
+    }
+  }
+}
+
+.economy {
+  width: 100%;
+  font-size: 20px;
+  font-family: "MuseoSansCyrl-700";
+  position: absolute;
+  bottom: 27%;
+
+  strong {
+    color: red;
+  }
+}
+
+.slide-8, .slide-9 {
+  .inner {
+    .content {
+      .essence {
+        display: table;
+        padding: 0 120px;
+
+        .item {
+          display: table-cell;
+          vertical-align: middle;
+          width: 25%;
+          height: 210px;
+          position: relative;
+          font-size: 0;
+
+          img {
+            margin: auto;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+
+          }
+
+        }
+      }
+    }
+  }
+}
+
+.slide-8 {
+  .inner {
+    .content {
+      .essence {
+        .item_4 {
+          transform: scale(.9);
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 5%;
+
+  a {
+    display: inline-block;
+    padding: 2px 15px 3px 15px;
+    background-color: red;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "MuseoSansCyrl-700";
+  }
+
+  .title {
+    width: 100%;
+    font-size: 20px;
+    font-family: "MuseoSansCyrl-700";
+
+    strong {
+      color: red;
+    }
+  }
+  .description {
+    padding: 0 120px;
+    font-size: 20px;
+    font-family: "MuseoSansCyrl-500";
+  }
+}
+
+.hidden-scroll {
+  display: inline-block;
+  width: 715px;
+  overflow: hidden;
+  margin-left: 115px;
+}
+
+@keyframes redBoxWidth {
+  0% {
+    opacity: 0;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    height: 0;
+  }
+
+  20% {
+    opacity: .9;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    height: 150px;
+    animation-delay: 1s;
+  }
+
+  60% {
+    opacity: .9;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    height: 150px;
+    animation-delay: 1s;
+  }
+
+  90% {
+    opacity: .9;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    height: 200px;
+  }
+
+
+  100% {
+    opacity: .9;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    height: 500px;
+  }
+}
+
+.redBoxWidth {
+  -webkit-animation-name: redBoxWidth;
+  animation-name: redBoxWidth;
+}
+
+
+@keyframes textOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.textOpacity {
+  -webkit-animation-name: textOpacity;
+  animation-name: textOpacity;
+  animation-delay: 2s;
+}
+
+///  Убирается скроллбар из спича
+/* хром, сафари */
+.element::-webkit-scrollbar { width: 0; }
+
+/* ie 10+ */
+.element { -ms-overflow-style: none; }
+
+/* фф (свойство больше не работает, других способов тоже нет)*/
+.element { overflow: -moz-scrollbars-none; }
+
+
