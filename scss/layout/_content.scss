@@ -119,9 +119,17 @@ aside {
         text-align: left;
         overflow-y: scroll;
 
-        :before {
-          @include oneline-sprite-box($icons, speech-bubble_tail);
-          @include pseudo-block($top: 50px, $left: -96px);
+        &:before {
+          content: '';
+          width: 96px;
+          height: 36px;
+          background-image: url("../../theme/images/tmp/speech-bubble_tail.png");
+          display: block;
+          position: absolute;
+          top: 50px;
+          left: 0;
+          //@include oneline-sprite-box($icons, speech-bubble_tail);
+         // @include pseudo-block($top: 50px, $left: -96px);
         }
     }
   }
@@ -387,7 +395,7 @@ aside {
   font-size: 18px;
   text-align: left;
   background-color: red;
-  opacity: .9;
+  opacity: .8;
   padding: 15px 60px 45px 30px;
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -395,6 +403,7 @@ aside {
   @include pseudo-block($top: 0, $left: 36px);
   line-height: 1.5;
   visibility: visible;
+
 
   strong {
     color: #ffffff;
@@ -404,10 +413,27 @@ aside {
   .cross {
     @include oneline-sprite-box($icons, cross);
     @include pseudo-block($top: -16px, $right: -16px);
+
   }
 }
 
+.slide-10 {
+  .inner {
+    .content {
+      .essence {
+        ul {
 
+          li {
+
+            &:last-child {
+              background-color: red;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 
 .slide-11 {
@@ -467,7 +493,7 @@ aside {
               width: 450px;
               padding: 15px 15px 15px 30px;
               top: -7%;
-              left: 29%;
+              left: 70%;
             }
 
       }
@@ -517,7 +543,16 @@ aside {
   }
 }
 
-.slide-17, .slide-18, .slide-19, .slide-20, .slide-21, .slide-22, .slide-23, .slide-24 {
+.slide-17,
+.slide-18,
+.slide-19,
+.slide-20,
+.slide-21,
+.slide-22,
+.slide-23,
+.slide-24,
+.slide-25,
+.slide-26 {
   .inner {
 
     > p {
@@ -597,7 +632,7 @@ aside {
   }
 }
 
-.slide-24 {
+.slide-24, .slide-25 {
   .inner {
     > p {
       width: 760px;
@@ -613,6 +648,31 @@ aside {
   }
 }
 
+.slide-25 {
+  .inner {
+    .content {
+      .essence {
+        img {
+          top: -26%;
+
+        }
+      }
+    }
+  }
+}
+
+.slide-26 {
+  .inner {
+    .content {
+      .essence {
+        img {
+          transform: scale(0.15);
+          top: -266%;
+        }
+      }
+    }
+  }
+}
 
 
 .hidden-scroll {
