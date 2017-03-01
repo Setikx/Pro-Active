@@ -163,7 +163,7 @@ aside {
 
 
 
-.slide-4, .slide-5, .slide-6, .slide-7, .slide-8, .slide-9 {
+.slide-4, .slide-5, .slide-6, .slide-7, .slide-8, .slide-9, .slide-10 {
   position: relative;
 
   .inner {
@@ -307,6 +307,71 @@ aside {
     font-family: "MuseoSansCyrl-500";
   }
 }
+
+.slide-10 {
+  .inner {
+    .content {
+      .essence {
+        margin-top: 50px;
+        position: relative;
+
+        ul {
+          padding: 0;
+
+          li {
+            display: inline-block;
+            width: 27%;
+            padding: 18px 0;
+            margin-right: 80px;
+            background-color: grey;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            font-size: 18px;
+            color: #ffffff;
+            cursor: pointer;
+
+            &:last-child {
+              width: 220px;
+              margin-right: 0;
+            }
+          }
+        }
+
+        img {
+        margin-top: 20px}
+        transform: scale(.9);
+
+        .small-speech {
+          width: 320px;
+          color: #ffffff;
+          font-size: 18px;
+          text-align: left;
+          background-color: red;
+          opacity: .9;
+          padding: 15px 60px 45px 30px;
+          border-top-left-radius: 30px;
+          border-bottom-right-radius: 30px;
+          position: absolute;
+          @include pseudo-block($top: 0, $left: 36px);
+          visibility: hidden;
+
+          .cross {
+            @include oneline-sprite-box($icons, cross);
+            @include pseudo-block($top: -16px, $right: -16px);
+          }
+        }
+      }
+    }
+    .footer {
+      strong {
+        color: red;
+      }
+    }
+  }
+}
+
+
+
 
 .hidden-scroll {
   display: inline-block;
