@@ -389,7 +389,7 @@ aside {
   position: absolute;
   @include pseudo-block($top: 0, $left: 36px);
   line-height: 1.5;
-  visibility: visible;
+  visibility: hidden;
 
 
   strong {
@@ -400,6 +400,7 @@ aside {
   .cross {
     @include oneline-sprite-box($icons, cross);
     @include pseudo-block($top: -16px, $right: -16px);
+    cursor: pointer;
 
   }
 }
