@@ -706,6 +706,8 @@ aside {
   position: absolute;
   top: -44%; }
 
+.slide-17 .inner > p, .slide-18 .inner > p, .slide-19 .inner > p, .slide-20 .inner > p, .slide-21 .inner > p, .slide-22 .inner > p, .slide-23 .inner > p, .slide-24 .inner > p {
+  width: 770px; }
 .slide-17 .inner > p span, .slide-18 .inner > p span, .slide-19 .inner > p span, .slide-20 .inner > p span, .slide-21 .inner > p span, .slide-22 .inner > p span, .slide-23 .inner > p span, .slide-24 .inner > p span {
   color: #000000; }
 .slide-17 .inner .content .essence img, .slide-18 .inner .content .essence img, .slide-19 .inner .content .essence img, .slide-20 .inner .content .essence img, .slide-21 .inner .content .essence img, .slide-22 .inner .content .essence img, .slide-23 .inner .content .essence img, .slide-24 .inner .content .essence img {
@@ -727,7 +729,7 @@ aside {
   top: -36%; }
 
 .slide-21 .inner .content .essence img, .slide-22 .inner .content .essence img, .slide-23 .inner .content .essence img {
-  top: -20%; }
+  top: -15%; }
 .slide-21 .inner .footer .description, .slide-22 .inner .footer .description, .slide-23 .inner .footer .description {
   padding: 0 110px; }
 

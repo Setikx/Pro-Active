@@ -4,7 +4,6 @@
     <list default="true" id="6f4e2c2c-6900-4162-a99b-a8eb74728819" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/0c9941272bc509bd2db7898d826739d3c70bd464/_content.scssc" afterPath="$PROJECT_DIR$/.sass-cache/0c9941272bc509bd2db7898d826739d3c70bd464/_content.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/layout/_content.scss" afterPath="$PROJECT_DIR$/scss/layout/_content.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/theme/css/styles.css" afterPath="$PROJECT_DIR$/theme/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -36,8 +35,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5661882" vertical-offset="8179" max-vertical-offset="9112">
-                  <caret line="502" column="70" selection-start-line="502" selection-start-column="70" selection-end-line="502" selection-end-column="70" />
+                <state vertical-scroll-proportion="0.5119617" vertical-offset="8179" max-vertical-offset="9112">
+                  <caret line="500" column="60" selection-start-line="500" selection-start-column="60" selection-end-line="500" selection-end-column="60" />
                   <folding />
                 </state>
               </provider>
@@ -50,8 +49,8 @@
           <file leaf-file-name="_content.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scss/layout/_content.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.728125" vertical-offset="9768" max-vertical-offset="11917">
-                  <caret line="602" column="5" selection-start-line="602" selection-start-column="5" selection-end-line="602" selection-end-column="5" />
+                <state vertical-scroll-proportion="0.35625" vertical-offset="9666" max-vertical-offset="11951">
+                  <caret line="582" column="33" selection-start-line="582" selection-start-column="33" selection-end-line="582" selection-end-column="33" />
                   <folding />
                 </state>
               </provider>
@@ -73,8 +72,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/theme/js/js.js" />
-        <option value="$PROJECT_DIR$/scss/layout/_content.scss" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/scss/layout/_content.scss" />
       </list>
     </option>
   </component>
@@ -478,18 +477,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/layout/_content.scss">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.728125" vertical-offset="9768" max-vertical-offset="11917">
-          <caret line="602" column="5" selection-start-line="602" selection-start-column="5" selection-end-line="602" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.5119617" vertical-offset="8179" max-vertical-offset="9112">
+          <caret line="500" column="60" selection-start-line="500" selection-start-column="60" selection-end-line="500" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/scss/layout/_content.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5661882" vertical-offset="8179" max-vertical-offset="9112">
-          <caret line="502" column="70" selection-start-line="502" selection-start-column="70" selection-end-line="502" selection-end-column="70" />
+        <state vertical-scroll-proportion="0.35625" vertical-offset="9666" max-vertical-offset="11951">
+          <caret line="582" column="33" selection-start-line="582" selection-start-column="33" selection-end-line="582" selection-end-column="33" />
           <folding />
         </state>
       </provider>
