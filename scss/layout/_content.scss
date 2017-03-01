@@ -163,7 +163,7 @@ aside {
 
 
 
-.slide-4, .slide-5, .slide-6, .slide-7, .slide-8, .slide-9, .slide-10 {
+.slide-4, .slide-5, .slide-6, .slide-7, .slide-8, .slide-9, .slide-10, .slide-11, .slide-12, .slide-13 {
   position: relative;
 
   .inner {
@@ -308,11 +308,11 @@ aside {
   }
 }
 
-.slide-10 {
+.slide-10, .slide-11, .slide-12, .slide-13 {
   .inner {
     .content {
       .essence {
-        margin-top: 50px;
+        margin-top: 65px;
         position: relative;
 
         ul {
@@ -322,54 +322,156 @@ aside {
             display: inline-block;
             width: 27%;
             padding: 18px 0;
-            margin-right: 80px;
+            margin-right: 70px;
             background-color: grey;
             border-top-right-radius: 10px;
             border-bottom-left-radius: 10px;
-            font-size: 18px;
+            font-size: 22px;
             color: #ffffff;
             cursor: pointer;
 
             &:last-child {
-              width: 220px;
+              width: 250px;
               margin-right: 0;
             }
           }
         }
 
         img {
-        margin-top: 20px}
-        transform: scale(.9);
-
-        .small-speech {
-          width: 320px;
-          color: #ffffff;
-          font-size: 18px;
-          text-align: left;
-          background-color: red;
-          opacity: .9;
-          padding: 15px 60px 45px 30px;
-          border-top-left-radius: 30px;
-          border-bottom-right-radius: 30px;
-          position: absolute;
-          @include pseudo-block($top: 0, $left: 36px);
-          visibility: hidden;
-
-          .cross {
-            @include oneline-sprite-box($icons, cross);
-            @include pseudo-block($top: -16px, $right: -16px);
-          }
+          margin-top: 20px;
+          transform:scale(.9);
         }
       }
     }
     .footer {
       strong {
         color: red;
+        cursor: pointer;
       }
     }
   }
 }
 
+.small-speech {
+  width: 320px;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: left;
+  background-color: red;
+  opacity: .9;
+  padding: 15px 60px 45px 30px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: absolute;
+  @include pseudo-block($top: 0, $left: 36px);
+  line-height: 1.5;
+  visibility: visible;
+
+  strong {
+    color: #ffffff;
+    font-family: 'MuseoSansCyrl-700';
+  }
+
+  .cross {
+    @include oneline-sprite-box($icons, cross);
+    @include pseudo-block($top: -16px, $right: -16px);
+  }
+}
+
+
+
+
+.slide-11 {
+  .inner {
+    .content {
+      .essence {
+        ul {
+
+          li {
+            &:first-child {
+              visibility: hidden;
+            }
+            &:last-child {
+              background-color: #009900;
+            }
+          }
+          }
+
+        img {
+          transform: scale(.8);
+          position: absolute;
+          top: -106px;
+          left: 5%;
+        }
+        }
+      }
+    }
+  }
+
+.slide-12 {
+  .inner {
+    .content {
+          .essence {
+            ul {
+
+          li {
+           width: 14%;
+
+            &:last-child {
+              width: 12%;
+              position: relative;
+
+              &:before {
+                @include oneline-sprite-box($icons, plus);
+                @include pseudo-block($top: 20%, $left: -42%);
+              }
+            }
+          }
+        }
+
+        img {
+          transform: scale(.5);
+          position: absolute;
+          top: 0;
+        }
+            .small-speech {
+              width: 450px;
+              padding: 15px 15px 15px 30px;
+              top: -7%;
+              left: 29%;
+            }
+
+      }
+    }
+  }
+}
+
+
+.slide-13 {
+  .inner {
+    .content {
+      .essence {
+        ul {
+
+          li {
+
+            width: 14%;
+
+            &:last-child {
+              width: 12%;
+            }
+          }
+        }
+
+        img {
+          transform: scale(.5);
+          position: absolute;
+          top: 0;
+        }
+      }
+    }
+  }
+}
 
 
 
