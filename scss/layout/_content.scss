@@ -136,11 +136,11 @@ aside {
 
   &:before {
     @include oneline-sprite-box($icons, speech-bubble_tail);
-    @include pseudo-block($top: 140px, $left: 23px);
+    @include pseudo-block($top: 140px, $left: 19px);
   }
   .hidden-scroll {
     display: inline-block;
-    width: 740px;
+    width: 715px;
     overflow: hidden;
     margin-left: 115px;
     position: relative;
@@ -155,13 +155,13 @@ aside {
   width: 300px;
   @include oneline-sprite($icons, btn-arrow);
   cursor: pointer;
-  transform: scale(.3) rotate(0deg);
+  @include transform (scale(.3) rotate(0deg));
 
 }
 
 .scrl-btn_rotate {
-  transform: scale(.3) rotate(180deg);
-  transition: transform .4s;
+  @include transform (scale(.3) rotate(180deg));
+  @include transition (transform .4s);
 }
 
 
@@ -768,7 +768,7 @@ aside {
 
 
   100% {
-    opacity: .9;
+    @include opacity (.9);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
     height: 500px;
@@ -875,11 +875,11 @@ aside {
     }
 
     &:nth-child(4){
-      transition-delay: 1.5s;
+      @include transition-delay (1.5s);
     }
 
     &:nth-child(5){
-      transition-delay: 2s;
+      @include transition-delay (2s);
     }
   }
 

@@ -85,12 +85,14 @@ function redBoxOnScroll () {
         $btn.on('click', function(){
 
             if ($btn.hasClass('scrl-btn_rotate')) {
-                $redBox.scrollTop(0);
-                $btn.removeClass('scrl-btn_rotate');
+                    $redBox.scrollTop(0);
+                    $btn.removeClass('scrl-btn_rotate');
+
             }
             else {
-                $redBox.scrollTop(300);
-                $btn.addClass('scrl-btn_rotate');
+                    $redBox.scrollTop(300);
+                    $btn.addClass('scrl-btn_rotate');
+
             }
         });
 
