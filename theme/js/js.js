@@ -2,6 +2,7 @@
     speechVisible();
     speechCrossClose();
     redTextAnimcount();
+    h2oAppear();
   //  economyBtn();
 
 
@@ -36,8 +37,6 @@ function speechVisible () {
                 $('.slide div.small-speech').addClass("small-speech-fadeOut");
                 $('.slide div.small-speech').addClass("animated");
                 $('.slide div.small-speech').removeClass("small-speech-fadeIn");
-
-
             });
         });
     }
@@ -52,6 +51,34 @@ function speechVisible () {
         });
     }
 
+
+    function h2oAppear() {
+        $(document).ready(function(){
+            var $h2o_1 = $('body > div > div > ul.slides > li.slide-12 > div > div.content > div > img.h2o_1');
+           var $h2o_2 = $('body > div > div > ul.slides > li.slide-12 > div > div.content > div > img.h2o_2');
+            var $h2o_3 = $('body > div > div > ul.slides > li.slide-12 > div > div.content > div > img.h2o_3');
+            var $hho = $('body > div > div > ul.slides > li.slide-12 > div > div.content > div > img.hho');
+            var $economyBtn = $('body > div > div > ul.slides > li.slide-12 > div > div.footer > a');
+
+            $economyBtn.on('click', function(){
+              //  $h2o_1.addClass("h2o-disappear");
+
+
+                $h2o_2.addClass("h2o_2-appear");
+                $h2o_2.addClass("h2o-disappear");
+
+
+              //  $h2o_3.addClass("h2o_3-appear");
+              //  $h2o_3.addClass("h2o-disappear");
+
+
+               // $hho.addClass("hho-appear");
+
+
+            });
+        });
+
+    }
 
 
 })(jQuery);
