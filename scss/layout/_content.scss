@@ -63,7 +63,7 @@ aside {
   }
 }
 
-#mask {
+.mask {
   @include box-shadow(0 0 0 50vw rgba(0, 0, 0, 0.70) inset);
 }
 
@@ -112,15 +112,58 @@ aside {
         border-bottom-right-radius: 35px;
         border-top-left-radius: 35px;
         @include opacity (.9);
-        padding: 0 40px 30px 30px;
+        padding: 30px 40px 30px 35px;
         color: white;
         font-size: 18px;
-        line-height: 2.0;
+        line-height: 2.1;
         text-align: left;
         overflow-y: scroll;
+
+        p {
+          opacity: 1 ;
+          &:first-child {
+          }
+        }
     }
   }
 }
+
+.speech-bubble_tail {
+  display: inline-block;
+  position: relative;
+  z-index: 10000;
+
+  &:before {
+    @include oneline-sprite-box($icons, speech-bubble_tail);
+    @include pseudo-block($top: 140px, $left: 23px);
+  }
+  .hidden-scroll {
+    display: inline-block;
+    width: 740px;
+    overflow: hidden;
+    margin-left: 115px;
+    position: relative;
+  }
+}
+
+.scrl-btn {
+  position: absolute;
+  bottom: 0;
+  left: 87.7%;
+  height: 211px;
+  width: 300px;
+  @include oneline-sprite($icons, btn-arrow);
+  cursor: pointer;
+  transform: scale(.3) rotate(0deg);
+
+}
+
+.scrl-btn_rotate {
+  transform: scale(.3) rotate(180deg);
+  transition: transform .4s;
+}
+
+
 
 .slide-2, .slide-3 {
   background-image: url("../../theme/images/bg/slide-1.jpg");
@@ -144,6 +187,8 @@ aside {
   }
 }
 
+
+
 .slide-3 {
   .item-3 {
     margin: 0;
@@ -151,11 +196,6 @@ aside {
     line-height: 0.8
   }
 }
-
-
-
-
-
 
 
 .slide-4,
@@ -180,7 +220,7 @@ aside {
 .slide-23,
 .slide-24,
 .slide-25,
-.slide-26,
+.slide-26
 {
   position: relative;
 
@@ -478,11 +518,6 @@ aside {
           @include transform (scale(.4));
           position: absolute;
           top: -12%;
-
-          &.hideelem {
-//            opacity: 0 !important;
-//            @include transition(opacity 1s);
-          }
         }
             .h2o_1 {
               @include transform (scale(0.1));
@@ -698,23 +733,6 @@ aside {
   }
 }
 
-.speech-bubble_tail {
-  display: inline-block;
-  position: relative;
-
-  &:before {
-    @include oneline-sprite-box($icons, speech-bubble_tail);
-    @include pseudo-block($top: 140px, $left: 19px);
-  }
-  .hidden-scroll {
-    display: inline-block;
-    width: 715px;
-    overflow: hidden;
-    margin-left: 115px;
-    position: relative;
-  }
-}
-
 
 @keyframes redBoxWidth {
   0% {
@@ -823,7 +841,7 @@ aside {
 .small-speech-fadeIn {
   -webkit-animation-name: small-speech-fadeIn;
   animation-name: small-speech-fadeIn;
-  animation-duration: 1s;
+  animation-duration: .3s;
 }
 
 
@@ -841,7 +859,7 @@ aside {
 .small-speech-fadeOut {
   -webkit-animation-name: small-speech-fadeOut;
   animation-name: small-speech-fadeOut;
-  animation-duration: 1s;
+  animation-duration: .3s;
 }
 
 .h2o {
@@ -852,83 +870,19 @@ aside {
     opacity: 1 !important;
 
     &:nth-child(3){
-      transition-delay: .5s;
+      transition-delay: 1s;
     }
 
     &:nth-child(4){
-      transition-delay: .8s;
+      transition-delay: 1.5s;
     }
 
     &:nth-child(5){
-      transition-delay: 1s;
+      transition-delay: 2s;
     }
   }
 
-  &.hho {
-    opacity: 1 !important;
-  }
-}
-
-////////////////////////
-//@keyframes h2o-appear {
-//  0% {
-//    @include opacity (0);
-//  }
-//
-//  100% {
-//    @include opacity (1);
-//  }
-//}
-
-//.h2o_2-appear {
-//  -webkit-animation-name: h2o-appear;
-//  animation-name: h2o-appear;
-//  animation-duration: 1s;
-//  animation-timing-function: linear;
-//  animation-fill-mode: both;
-// // @include animation-iteration-count (infinite);
-//}
-
-.h2o_3-appear {
-  -webkit-animation-name: h2o-appear;
-  animation-name: h2o-appear;
-  animation-duration: 1s;
-  animation-delay: 1s;
-  animation-timing-function: linear;
-  animation-fill-mode: both;
- // @include animation-iteration-count (infinite);
-}
-
-.hho-appear {
-  -webkit-animation-name: h2o-appear;
-  animation-name: h2o-appear;
-  animation-duration: 1s;
-  animation-delay: 4s;
-  animation-timing-function: linear;
-  animation-fill-mode: both;
- // @include animation-iteration-count (infinite);
 }
 
 
 
-
-////////////////////////
-@keyframes h2o-disappear {
-  0% {
-    @include opacity (1);
-  }
-
-  100% {
-    @include opacity (0);
-  }
-}
-
-.h2o-disappear {
-  -webkit-animation-name: h2o-disappear;
-  animation-name: h2o-disappear;
-  animation-duration: 1s;
-  animation-delay: 3s;
-  animation-timing-function: linear;
-  animation-fill-mode: both;
- // @include animation-iteration-count (infinite);
-}
