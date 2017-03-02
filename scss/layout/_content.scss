@@ -115,13 +115,14 @@ aside {
         padding: 30px 40px 30px 35px;
         color: white;
         font-size: 18px;
-        line-height: 2.1;
+        line-height: 2.2;
         text-align: left;
         overflow-y: scroll;
 
         p {
           opacity: 1 ;
           &:first-child {
+            margin-top: 0;
           }
         }
     }
