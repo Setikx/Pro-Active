@@ -382,14 +382,13 @@ aside {
   font-size: 18px;
   text-align: left;
   background-color: red;
-  @include opacity (.8);
+  @include opacity (.0);
   padding: 15px 60px 45px 30px;
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
   position: absolute;
-  @include pseudo-block($top: 0, $left: 36px);
+  @include pseudo-block($top: 0, $left: 31px);
   line-height: 1.5;
-  visibility: hidden;
 
 
   strong {
@@ -754,7 +753,8 @@ aside {
 
 
 
-@keyframes flashing {
+
+@keyframes flashing {  //Brix redText animation
   0% {
     @include opacity (0);
   }
@@ -768,4 +768,39 @@ aside {
   -webkit-animation-name: flashing;
   animation-name: flashing;
   @include animation-iteration-count (infinite);
+}
+
+
+
+
+@keyframes small-speech-fadeIn {  //Small speech fade effect
+  0% {
+    @include opacity (0);
+  }
+
+  100% {
+    @include opacity (.8);
+  }
+}
+
+.small-speech-fadeIn {
+  -webkit-animation-name: small-speech-fadeIn;
+  animation-name: small-speech-fadeIn;
+  animation-duration: 1s;
+}
+
+@keyframes small-speech-fadeOut {  //Small speech fade effect
+  0% {
+    @include opacity (.8);
+  }
+
+  100% {
+    @include opacity (0);
+  }
+}
+
+.small-speech-fadeOut {
+  -webkit-animation-name: small-speech-fadeOut;
+  animation-name: small-speech-fadeOut;
+  animation-duration: 1s;
 }
