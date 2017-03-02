@@ -1,6 +1,8 @@
 (function ($) {
     speechVisible();
     speechCrossClose();
+    redTextAnimcount();
+    economyBtn();
 
 
     $(window).load(function () {
@@ -33,6 +35,28 @@ function speechVisible () {
             });
         });
     }
+
+    function redTextAnimcount () {
+        $(document).ready(function () {
+            var $cross = $('body div.wrapper div.flexslider.with-red-arrow ul.slides li.slide-12 div.inner div.footer p.description strong');
+            $cross.on('click', function () {
+                $cross.addClass("flashing");
+                $cross.addClass("animated");
+            });
+        });
+    }
+
+
+function economyBtn () {
+    $(document).ready(function () {
+       var $economy = $('body > div > div > ul.slides > li.slide-6 > div > div.footer');
+        $economy.on('click', function () {
+           $economy.append('<p class="title">Экономия: <strong>бесценно!</strong></p>');
+        });
+    });
+}
+
+
 
 
 })(jQuery);

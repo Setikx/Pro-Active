@@ -753,3 +753,19 @@ aside {
 .element { overflow: -moz-scrollbars-none; }
 
 
+
+@keyframes flashing {
+  0% {
+    @include opacity (0);
+  }
+
+  100% {
+    @include opacity (1);
+  }
+}
+
+.flashing {
+  -webkit-animation-name: flashing;
+  animation-name: flashing;
+  @include animation-iteration-count (infinite);
+}
