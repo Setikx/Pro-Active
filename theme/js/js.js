@@ -60,19 +60,29 @@ function speechVisible () {
             var $hho = $('body > div > div > ul.slides > li.slide-12 > div > div.content > div > img.hho');
             var $economyBtn = $('body > div > div > ul.slides > li.slide-12 > div > div.footer > a');
 
-            $economyBtn.on('click', function(){
-              //  $h2o_1.addClass("h2o-disappear");
+            $economyBtn.on('click', function(e){
+                e.preventDefault();
 
+                $('.h2o-atom').addClass('appear');
 
-                $h2o_2.addClass("h2o_2-appear");
-                $h2o_2.addClass("h2o-disappear");
+                setTimeout(function(){
+                    $('.h2o-atom').removeClass('appear');
+                    $('.red-atoms').addClass('hideelem');
+                    $('.hho').addClass('appear');
+                },5000);
 
-
-              //  $h2o_3.addClass("h2o_3-appear");
-              //  $h2o_3.addClass("h2o-disappear");
-
-
-               // $hho.addClass("hho-appear");
+                //$h2o_1.addClass("h2o-disappear");
+                //
+                //
+                //$h2o_2.addClass("h2o_2-appear");
+                //$h2o_2.addClass("h2o-disappear");
+                //
+                //
+                //$h2o_3.addClass("h2o_3-appear");
+                //$h2o_3.addClass("h2o-disappear");
+                //
+                //
+                //$hho.addClass("hho-appear");
 
 
             });

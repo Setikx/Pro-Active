@@ -478,6 +478,11 @@ aside {
           @include transform (scale(.4));
           position: absolute;
           top: -12%;
+
+          &.hideelem {
+//            opacity: 0 !important;
+//            @include transition(opacity 1s);
+          }
         }
             .h2o_1 {
               @include transform (scale(0.1));
@@ -839,27 +844,50 @@ aside {
   animation-duration: 1s;
 }
 
+.h2o {
+  opacity: 0 !important;
+  @include transition(opacity 1s);
 
+  &.appear{
+    opacity: 1 !important;
+
+    &:nth-child(3){
+      transition-delay: .5s;
+    }
+
+    &:nth-child(4){
+      transition-delay: .8s;
+    }
+
+    &:nth-child(5){
+      transition-delay: 1s;
+    }
+  }
+
+  &.hho {
+    opacity: 1 !important;
+  }
+}
 
 ////////////////////////
-@keyframes h2o-appear {
-  0% {
-    @include opacity (0);
-  }
+//@keyframes h2o-appear {
+//  0% {
+//    @include opacity (0);
+//  }
+//
+//  100% {
+//    @include opacity (1);
+//  }
+//}
 
-  100% {
-    @include opacity (1);
-  }
-}
-
-.h2o_2-appear {
-  -webkit-animation-name: h2o-appear;
-  animation-name: h2o-appear;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
- // @include animation-iteration-count (infinite);
-}
+//.h2o_2-appear {
+//  -webkit-animation-name: h2o-appear;
+//  animation-name: h2o-appear;
+//  animation-duration: 1s;
+//  animation-timing-function: linear;
+//  animation-fill-mode: both;
+// // @include animation-iteration-count (infinite);
+//}
 
 .h2o_3-appear {
   -webkit-animation-name: h2o-appear;
@@ -867,6 +895,7 @@ aside {
   animation-duration: 1s;
   animation-delay: 1s;
   animation-timing-function: linear;
+  animation-fill-mode: both;
  // @include animation-iteration-count (infinite);
 }
 
@@ -876,6 +905,7 @@ aside {
   animation-duration: 1s;
   animation-delay: 4s;
   animation-timing-function: linear;
+  animation-fill-mode: both;
  // @include animation-iteration-count (infinite);
 }
 
@@ -899,5 +929,6 @@ aside {
   animation-duration: 1s;
   animation-delay: 3s;
   animation-timing-function: linear;
+  animation-fill-mode: both;
  // @include animation-iteration-count (infinite);
 }
