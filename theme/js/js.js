@@ -90,7 +90,7 @@ function redBoxOnScroll () {
 
             }
             else {
-                    $redBox.scrollTop(300);
+                    $redBox.scrollTop(400);
                     $btn.addClass('scrl-btn_rotate');
 
             }
